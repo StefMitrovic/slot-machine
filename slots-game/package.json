@@ -1,0 +1,37 @@
+{
+  "name": "slots-game",
+  "version": "1.0.0",
+  "description": "A simple slots game using PixiJS",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development",
+    "lint": "eslint src --ext .ts",
+    "test": "node --loader tsx node_modules/mocha/bin/mocha test/**/*.ts"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "pixi-spine": "^4.0.4",
+    "pixi.js": "^7.3.2",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.2",
+    "@types/howler": "^2.2.12",
+    "@types/mocha": "^10.0.10",
+    "@types/sinon": "^17.0.4",
+    "chai": "^5.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.56.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mocha": "^11.2.2",
+    "sinon": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "private": true
+}
